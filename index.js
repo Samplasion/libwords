@@ -23,7 +23,7 @@ var wordSingular = (item, ie = false) => {
 
     if (item.substr(-3) == "ies")
       i = item.substr(0, item.length - 3) + ie ? "ie" : "y"
-    else if (item.substr(-5) == "es")
+    else if (item.substr(-2) == "es")
       i = item.substr(0, item.length - 2)
     else if (item.substr(-1) == "s")
       i = item.substr(0, item.length - 1)
