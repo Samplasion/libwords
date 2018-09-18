@@ -1,14 +1,14 @@
 {
-  "name": "libnouns",
+  "name": "libwords",
   "version": "0.2.2-0",
-  "description": "A simple library for name utilities",
+  "description": "A simple library for word utilities",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Samplasion/libnouns.git"
+    "url": "git+https://github.com/Samplasion/libwords.git"
   },
   "keywords": [
     "plural",
