@@ -1,6 +1,6 @@
 {
   "name": "libnouns",
-  "version": "0.1.0-dev+123abc",
+  "version": "0.1.1-dev",
   "description": "A simple library for name utilities",
   "main": "index.js",
   "scripts": {
