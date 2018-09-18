@@ -1,0 +1,17 @@
+{
+  "name": "libnouns",
+  "version": "0.1.0-dev",
+  "description": "A simple library for name utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "plural",
+    "plurals",
+    "lib",
+    "library"
+  ],
+  "author": "Samplasion",
+  "license": "ISC"
+}
