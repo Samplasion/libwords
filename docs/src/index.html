@@ -11,29 +11,6 @@
   <div id="container">
     <div id="background"></div>
     
-      <ul id="jump_to">
-        <li>
-          <a class="large" href="javascript:void(0);">Jump To &hellip;</a>
-          <a class="small" href="javascript:void(0);">+</a>
-          <div id="jump_wrapper">
-          <div id="jump_page_wrapper">
-            <div id="jump_page">
-              
-                
-                <a class="source" href="index.html">
-                  src/index.js
-                </a>
-              
-                
-                <a class="source" href="test.html">
-                  src/test.js
-                </a>
-              
-            </div>
-          </div>
-        </li>
-      </ul>
-    
     <ul class="sections">
         
           <li id="title">
@@ -53,7 +30,12 @@
               
             </div>
             
-            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">var</span> plural = <span class="hljs-function">(<span class="hljs-params">num, item</span>) =&gt;</span> {
+            <div class="content"><div class='highlight'><pre><span class="hljs-comment">/**
+ * Gets a string containing the number and the word if &lt;code&gt;num&lt;/code&gt; is 1, otherwise its plural.
+ * @parameter num The number of items that determines if &lt;code&gt;item&lt;/code&gt; should be plural.
+ * @parameter item The item to be eventually converted to plural
+ */</span>
+<span class="hljs-keyword">var</span> plural = <span class="hljs-function">(<span class="hljs-params">num, item</span>) =&gt;</span> {
     <span class="hljs-keyword">if</span> (num == <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-string">`<span class="hljs-subst">${num}</span> <span class="hljs-subst">${item}</span>`</span>
     
     <span class="hljs-keyword">var</span> i = wordPlural(item);

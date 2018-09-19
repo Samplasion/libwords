@@ -4,7 +4,8 @@
   "description": "A simple library for word utilities",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "docgen": "docco src/*.js"
   },
   "repository": {
     "type": "git",
@@ -13,6 +14,8 @@
   "keywords": [
     "plural",
     "plurals",
+    "word",
+    "words",
     "lib",
     "library"
   ],
