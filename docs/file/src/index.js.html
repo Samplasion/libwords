@@ -46,7 +46,7 @@ var plural = (num, item) =&gt; {
     var i = wordPlural(item);
     
     return `${num} ${i}`
-}
+};
 
 var wordPlural = (item) =&gt; {
 
@@ -59,7 +59,7 @@ var wordPlural = (item) =&gt; {
     else i += &quot;s&quot;
 
     return i
-}
+};
 var wordSingular = (item, ie = false) =&gt; {
     var i = item;
 
@@ -71,12 +71,12 @@ var wordSingular = (item, ie = false) =&gt; {
       i = item.substr(0, item.length - 1)
 
     return i
-}
+};
 module.exports = {
     plural,
     wordPlural,
     wordSingular
-}
+};
 </code></pre>
 
 </div>
