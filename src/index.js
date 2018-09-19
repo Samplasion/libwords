@@ -1,7 +1,8 @@
 /**
- * Gets a string containing the number and the word if <code>num</code> is 1, otherwise its plural.
- * @parameter num The number of items that determines if <code>item</code> should be plural.
- * @parameter item The item to be eventually converted to plural
+ * Get a string in the format 'num item'
+ * @param {number} num The number of items that determines if <code>item</code> should be plural.
+ * @param {string} item The item to be eventually converted to plural
+ * @return {string} A string containing the number and the word if <code>num</code> is 1, otherwise its plural.
  */
 var plural = (num, item) => {
     if (num == 1) return `${num} ${item}`
