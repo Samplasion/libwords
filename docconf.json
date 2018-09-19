@@ -11,7 +11,8 @@
         "dictionaries": ["jsdoc","closure"]
     },
     "templates": {
-	"name": "libwords Documentation",
+	"name": "libwords",
+	"footerText": "libwords by Samplasion",
 	"default": {
 	    "outputSourceFiles": false
 	},
