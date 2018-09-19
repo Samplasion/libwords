@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Class: CheckUtils | libwords</title>
+    <title>Class: Util | libwords</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -46,9 +46,9 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>CheckUtils<span class="signature">()</span><span class="type-signature"></span></h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>Util<span class="signature">(item, options, goodKeys)</span><span class="type-signature"></span></h2>
         
-            <div class="class-description">A class containing word checking utilities</div>
+            <div class="class-description">A boilerplate class to be used for various parts of the speech.</div>
         
     
 </header>
@@ -61,9 +61,9 @@
 
 <dt>
     
-        <h4 class="name" id="CheckUtils">
+        <h4 class="name" id="Util">
             
-                new <span class="type-signature"></span>CheckUtils<span class="signature">()</span><span class="type-signature"></span>
+                new <span class="type-signature"></span>Util<span class="signature">(item, options, goodKeys)</span><span class="type-signature"></span>
                 
             
         </h4>
@@ -74,13 +74,114 @@
 <dd>
 
     
-
+    <div class="description">
+        Constructs the item.
+    </div>
     
 
     
 
     
 
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>item</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">string The item.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">object The options to be accounted.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>goodKeys</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    null
+                
+                </td>
+            
+
+            <td class="description last">?Array The array of good keys.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
     
 
     
@@ -116,6 +217,13 @@
 
     
 
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>Samplasion</li>
+        </ul>
+    </dd>
     
 
     
@@ -162,9 +270,9 @@
 
 <dt>
     
-        <h4 class="name" id=".isSingular">
+        <h4 class="name" id="toString">
             
-                <span class="type-signature"><span class="icon green">static</span> </span>isSingular<span class="signature">(noun)</span><span class="type-signature"></span>
+                <span class="type-signature"></span>toString<span class="signature">()</span><span class="type-signature"></span>
                 
             
         </h4>
@@ -176,7 +284,7 @@
 
     
     <div class="description">
-        Checks if the given noun is singular
+        Required toString() method
     </div>
     
 
@@ -186,56 +294,6 @@
 
     
 
-    
-    <div class="container-params">
-        <h5>Parameters:</h5>
-        
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>noun</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The noun</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    </div>
     
 
     
@@ -257,7 +315,7 @@
 
 
 
-- boolean <code>true</code> if the noun is singular, <code>false</code> otherwise
+- string The item defined in the constructor.
 
 
 
@@ -332,7 +390,7 @@
 <script src="scripts/linenumber.js"></script>
 
     <script>
-        var id = 'CheckUtils_sub'.replace(/"/g, '_');
+        var id = 'Util_sub'.replace(/"/g, '_');
         var selectedApi = document.getElementById(id); // do not use jquery selector
         var $selectedApi = $(selectedApi);
 
