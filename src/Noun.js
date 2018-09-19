@@ -8,17 +8,22 @@ const Util = require('./Util.js')
  */
  class Noun extends Util {
      
-     /**
-      * @param noun The noun
-      * @param options The options (if any) {@link index.js}
-      */
-      constructor(noun, options) {
-          super(noun, options, ["shouldEndInIe"])
-      }
-      
-      toSingular() {
-          return wordSingular(this.toString());
-      }
+         /**
+          * @param noun The noun
+          * @param options The options (if any).
+          */
+         constructor(noun, options) {
+             super(noun, options, ["shouldEndInIe"])
+         }
+	
+	
+	 /**
+	  * Returns the singular if <code>noun<code> is plural, or itself otherwise
+	  * @return {string} The noun in singular
+	  */
+         toSingular() {
+             return wordSingular(this.toString(), this.shoulsEndInIe);
+         }
  }
  
  module.exports = Noun

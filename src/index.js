@@ -2,7 +2,7 @@
  * Get a string in the format 'num item'
  * @param {number} num The number of items that determines if <code>item</code> should be plural.
  * @param {string} item The item to be eventually converted to plural
- * @return string A string containing the number and the word if <code>num</code> is 1, otherwise its plural.
+ * @return {string} A string containing the number and the word if <code>num</code> is 1, otherwise its plural.
  */
 var plural = (num, item) => {
     if (num == 1) return `${num} ${item}`
@@ -15,7 +15,7 @@ var plural = (num, item) => {
 /**
  * Gets the plural of a string
  * @param {string} item The item in singular
- * @return The item in plural
+ * @return {string} The item in plural
  */
 var wordPlural = (item) => {
 
@@ -25,6 +25,8 @@ var wordPlural = (item) => {
       i = item.substr(0, item.length - 1) + "ies"
     else if (item.substr(-3) == "tch")
       i += "es"
+    else if (item.substr(-2) == "ss")
+      i += "es"
     else i += "s"
 
     return i
@@ -33,8 +35,8 @@ var wordPlural = (item) => {
 /**
  * Gets the singular of a string
  * @param {string} item The item in plural
- * @param {boolean} ie Whether the world should end in 'y' or 'ie' (only applies to words which end in 'ies'). Default: <code>true</code>
- * @return The item in singular
+ * @param {boolean} ie Whether the world should end in 'y' or 'ie' (only applies to words which end in 'ies').
+ * @return {string} The item in singular
  */
 var wordSingular = (item, ie = false) => {
     var i = item;
