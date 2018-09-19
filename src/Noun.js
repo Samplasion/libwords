@@ -18,7 +18,7 @@ const Util = require('./Util.js')
 	
 	
 	 /**
-	  * Returns the singular if <code>noun<code> is plural, or itself otherwise
+	  * Returns the singular if <code>noun</code> is plural, or itself otherwise
 	  * @return {string} The noun in singular
 	  */
          toSingular() {
