@@ -1,6 +1,6 @@
 {
   "name": "libwords",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A simple library for word utilities",
   "main": "index.js",
   "scripts": {
