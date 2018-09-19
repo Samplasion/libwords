@@ -1,0 +1,24 @@
+{
+    "plugins": [],
+    "recurseDepth": 10,
+    "source": {
+        "includePattern": ".+\\.js(doc|x)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "sourceType": "module",
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc","closure"]
+    },
+    "templates": {
+	"name": "libwords Documentation",
+	"default": {
+	    "outputSourceFiles": false
+	},
+        "cleverLinks": false,
+        "monospaceLinks": false
+    },
+    "opts": {
+	"template": "tui-jsdoc-template"
+    }
+}
