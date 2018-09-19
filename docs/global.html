@@ -2,23 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Global</title>
+    <title>Global | libwords Documentation</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-jsdoc.css">
     <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link type="text/css" rel="stylesheet" href="styles/tui-doc.css">
+
+    
 </head>
-
 <body>
+<nav class="lnb" id="lnb">
+    <div class="logo" style="">
+        
+            <img src="img/toast-ui.png" width="100%" height="100%">
+        
+    </div>
+    <div class="title">
+        <h1><a href="index.html" class="link">libwords Documentation</a></h1>
+        
+    </div>
+    <div class="search-container" id="search-container">
+        <input type="text" placeholder="Search">
+        <ul></ul>
+    </div>
+    
+    <div class="lnb-api hidden"><h3>Classes</h3><ul><li><a href="CheckUtils.html">CheckUtils</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="CheckUtils_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="CheckUtils.html#.isSingular">isSingular</a></li></ul></div></li></ul></div><div class="lnb-api hidden"><h3>Global</h3><ul><li><a href="global.html#plural">plural</a></li><li><a href="global.html#wordPlural">wordPlural</a></li><li><a href="global.html#wordSingular">wordSingular</a></li></ul></div>
+</nav>
+<div id="resizer"></div>
 
-<div id="main">
-
-    <h1 class="page-title">Global</h1>
-
+<div class="main" id="main">
     
 
 
@@ -28,58 +46,12 @@
 
 <header>
     
-        <h2></h2>
-        
+        <h2>Global</h2>
     
 </header>
 
 <article>
-    <div class="container-overview">
     
-        
-
-        
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-    
-    </div>
 
     
 
@@ -98,34 +70,39 @@
     
         <h3 class="subsection-title">Methods</h3>
 
-        
+        <dl>
+                
+
+<dt>
+    
+        <h4 class="name" id="plural">
             
+                <span class="type-signature"></span>plural<span class="signature">(num, item)</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Get a string in the format 'num item'
+    </div>
+    
+
+    
 
     
 
     
-    <h4 class="name" id="plural"><span class="type-signature"></span>plural<span class="signature">(num, item)</span><span class="type-signature"></span></h4>
-    
 
     
-
-
-
-<div class="description">
-    Get a string in the format 'num item'
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
 <table class="params">
     <thead>
     <tr>
@@ -194,9 +171,38 @@
     </tbody>
 </table>
 
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
 
 
 
+
+- string A string containing the number and the word if <code>num</code> is 1, otherwise its plural.
+
+
+
+
+            
+    </div>
+    
+
+    
 
 
 <dl class="details">
@@ -226,13 +232,6 @@
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line7">line 7</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -240,60 +239,43 @@
 </dl>
 
 
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    string A string containing the number and the word if <code>num</code> is 1, otherwise its plural.
-</div>
-
-
-
     
 
+</dd>
 
-
-
-
-        
             
+                
+
+<dt>
+    
+        <h4 class="name" id="wordPlural">
+            
+                <span class="type-signature"></span>wordPlural<span class="signature">(item)</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Gets the plural of a string
+    </div>
+    
+
+    
 
     
 
     
-    <h4 class="name" id="wordPlural"><span class="type-signature"></span>wordPlural<span class="signature">(item)</span><span class="type-signature"></span></h4>
-    
 
     
-
-
-
-<div class="description">
-    Gets the plural of a string
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
 <table class="params">
     <thead>
     <tr>
@@ -339,9 +321,38 @@
     </tbody>
 </table>
 
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
 
 
 
+
+- The item in plural
+
+
+
+
+            
+    </div>
+    
+
+    
 
 
 <dl class="details">
@@ -371,13 +382,6 @@
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line20">line 20</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -385,60 +389,43 @@
 </dl>
 
 
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    The item in plural
-</div>
-
-
-
     
 
+</dd>
 
-
-
-
-        
             
+                
+
+<dt>
+    
+        <h4 class="name" id="wordSingular">
+            
+                <span class="type-signature"></span>wordSingular<span class="signature">(item, ie)</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Gets the singular of a string
+    </div>
+    
+
+    
 
     
 
     
-    <h4 class="name" id="wordSingular"><span class="type-signature"></span>wordSingular<span class="signature">(item, ie)</span><span class="type-signature"></span></h4>
-    
 
     
-
-
-
-<div class="description">
-    Gets the singular of a string
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
 <table class="params">
     <thead>
     <tr>
@@ -519,9 +506,38 @@
     </tbody>
 </table>
 
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
 
 
 
+
+- The item in singular
+
+
+
+
+            
+    </div>
+    
+
+    
 
 
 <dl class="details">
@@ -551,13 +567,6 @@
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line39">line 39</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -565,33 +574,11 @@
 </dl>
 
 
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    The item in singular
-</div>
-
-
-
     
 
+</dd>
 
-
-
-
-        
+            </dl>
     
 
     
@@ -606,17 +593,24 @@
 
 </div>
 
-<nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="CheckUtils.html">CheckUtils</a></li></ul><h3>Global</h3><ul><li><a href="global.html#plural">plural</a></li><li><a href="global.html#wordPlural">wordPlural</a></li><li><a href="global.html#wordSingular">wordSingular</a></li></ul>
-</nav>
-
-<br class="clear">
-
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Wed Sep 19 2018 13:17:50 GMT+0200 (GMT+02:00)
+    <img class="logo" src="img/toast-ui.png" style="">
+    <div class="footer-text">NHN Entertainment. Frontend Development Lab</div>
 </footer>
+<script>prettyPrint();</script>
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/tui-doc.js"></script>
+<script src="scripts/linenumber.js"></script>
 
-<script> prettyPrint(); </script>
-<script src="scripts/linenumber.js"> </script>
+    <script>
+        var id = '_sub'.replace(/"/g, '_');
+        var selectedApi = document.getElementById(id); // do not use jquery selector
+        var $selectedApi = $(selectedApi);
+
+        $selectedApi.removeClass('hidden');
+        $selectedApi.parent().find('.glyphicon').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+        showLnbApi();
+    </script>
+
 </body>
 </html>

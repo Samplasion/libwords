@@ -19,6 +19,6 @@
         "monospaceLinks": false
     },
     "opts": {
-	"template": "tui-jsdoc-template"
+	"template": "node_modules/tui-jsdoc-template"
     }
 }
