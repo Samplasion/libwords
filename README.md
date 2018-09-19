@@ -19,6 +19,4 @@ The second parameter in `ln.wordSingular` is whether the word, if it ends in "ie
 
 ## Documentation
 
-### `plural(num, item)`
-
-Returns a string whiich contains teh number of items `num`, followed by `item` if num is 1, or its plural otherwise.
+ * [Documentation](http://samplasion.github.io/libwords)
