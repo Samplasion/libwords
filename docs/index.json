@@ -566,6 +566,80 @@
   {
     "__docId__": 48,
     "kind": "file",
+    "name": "src/CheckUtils.js",
+    "content": "const { wordSingular } = require('./index.js');\n\n/**\n * A class containing word checking utilities\n */\nclass CheckUtils {\n\n    /**\n     * Checks if the given noun is singular\n     */\n    static isSingular(noun) {\n\treturn wordSingular(noun) == noun;\n    }\n}\n\nmodule.exports = CheckUtils\n",
+    "static": true,
+    "longname": "/data/data/com.termux/files/home/libplurals/src/CheckUtils.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "wordSingular",
+    "memberof": "src/CheckUtils.js",
+    "static": true,
+    "longname": "src/CheckUtils.js~wordSingular",
+    "access": "public",
+    "export": false,
+    "importPath": "libwords/src/CheckUtils.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "class",
+    "name": "CheckUtils",
+    "memberof": "src/CheckUtils.js",
+    "static": true,
+    "longname": "src/CheckUtils.js~CheckUtils",
+    "access": "public",
+    "export": false,
+    "importPath": "libwords/src/CheckUtils.js",
+    "importStyle": null,
+    "description": "A class containing word checking utilities",
+    "lineNumber": 6,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "method",
+    "name": "isSingular",
+    "memberof": "src/CheckUtils.js~CheckUtils",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/CheckUtils.js~CheckUtils.isSingular",
+    "access": "public",
+    "description": "Checks if the given noun is singular",
+    "lineNumber": 11,
+    "params": [
+      {
+        "name": "noun",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
     "name": "src/index.js",
     "content": "/**\n * Get a string in the format 'num item'\n * @param {number} num The number of items that determines if <code>item</code> should be plural.\n * @param {string} item The item to be eventually converted to plural\n * @return {string} A string containing the number and the word if <code>num</code> is 1, otherwise its plural.\n */\nvar plural = (num, item) => {\n    if (num == 1) return `${num} ${item}`\n    \n    var i = wordPlural(item);\n    \n    return `${num} ${i}`\n};\n\nvar wordPlural = (item) => {\n\n    var i = item;\n\n    if (item.substr(-1) == \"y\")\n      i = item.substr(0, item.length - 1) + \"ies\"\n    else if (item.substr(-3) == \"tch\")\n      i += \"es\"\n    else i += \"s\"\n\n    return i\n};\nvar wordSingular = (item, ie = false) => {\n    var i = item;\n\n    if (item.substr(-3) == \"ies\")\n      i = item.substr(0, item.length - 3) + (ie ? \"ie\" : \"y\")\n    else if (item.substr(-2) == \"es\")\n      i = item.substr(0, item.length - 2)\n    else if (item.substr(-1) == \"s\")\n      i = item.substr(0, item.length - 1)\n\n    return i\n};\nmodule.exports = {\n    plural,\n    wordPlural,\n    wordSingular\n};\n",
     "static": true,
@@ -575,7 +649,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 49,
+    "__docId__": 53,
     "kind": "function",
     "name": "plural",
     "memberof": "src/index.js",
@@ -622,7 +696,7 @@
     "ignore": true
   },
   {
-    "__docId__": 50,
+    "__docId__": 54,
     "kind": "function",
     "name": "wordPlural",
     "memberof": "src/index.js",
@@ -653,7 +727,7 @@
     "ignore": true
   },
   {
-    "__docId__": 51,
+    "__docId__": 55,
     "kind": "function",
     "name": "wordSingular",
     "memberof": "src/index.js",
@@ -694,7 +768,7 @@
   },
   {
     "kind": "index",
-    "content": "# libwords\n\n`libwords` is a tiny library for word utils.\n\n> DEVELOPMENT version\n\n## Usage\n\n```js\nconst ln = require(\"libnouns\");\n\nconsole.log(ln.plural(2, \"apple\")) // => 2 apples\nconsole.log(ln.wordPlural(\"match\")) // => matches\nconsole.log(ln.wordSingular(\"queries\")) // => query\nconsole.log(ln.wordSingular(\"freebies\", true)) // => freebie\n```\n\nThe second parameter in `ln.wordSingular` is whether the word, if it ends in \"ies\", should end in 'y' or 'ie'.\n\n## Documentation\n\n### `plural(num, item)`\n\nReturns a string whiich contains teh number of items `num`, followed by `item` if num is 1, or its plural otherwise.\n",
+    "content": "# libwords\n\n`libwords` is a tiny library for word utils.\n\n> DEVELOPMENT version\n\n## Usage\n\n```js\nconst ln = require(\"libnouns\");\n\nconsole.log(ln.plural(2, \"apple\")) // => 2 apples\nconsole.log(ln.wordPlural(\"match\")) // => matches\nconsole.log(ln.wordSingular(\"queries\")) // => query\nconsole.log(ln.wordSingular(\"freebies\", true)) // => freebie\n```\n\nThe second parameter in `ln.wordSingular` is whether the word, if it ends in \"ies\", should end in 'y' or 'ie'.\n\n## Documentation\n\n * [Documentation](http://samplasion.github.io/libwords)\n",
     "longname": "/data/data/com.termux/files/home/libplurals/README.md",
     "name": "./README.md",
     "static": true,
@@ -702,7 +776,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"libwords\",\n  \"version\": \"0.3.1\",\n  \"description\": \"A simple library for word utilities\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"test\": \"node test.js\",\n    \"docgen\": \"docco src/*.js\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/Samplasion/libwords.git\"\n  },\n  \"keywords\": [\n    \"plural\",\n    \"plurals\",\n    \"word\",\n    \"words\",\n    \"lib\",\n    \"library\"\n  ],\n  \"author\": \"Samplasion\",\n  \"license\": \"ISC\",\n  \"dependencies\": {\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-lint-plugin\": \"^1.0.2\",\n    \"esdoc-standard-plugin\": \"^1.0.0\"\n  }\n}\n",
+    "content": "{\n  \"name\": \"libwords\",\n  \"version\": \"0.3.2\",\n  \"description\": \"A simple library for word utilities\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"test\": \"node test.js\",\n    \"docgen\": \"docco src/*.js\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/Samplasion/libwords.git\"\n  },\n  \"keywords\": [\n    \"plural\",\n    \"plurals\",\n    \"word\",\n    \"words\",\n    \"lib\",\n    \"library\"\n  ],\n  \"author\": \"Samplasion\",\n  \"license\": \"ISC\",\n  \"dependencies\": {\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-lint-plugin\": \"^1.0.2\",\n    \"esdoc-standard-plugin\": \"^1.0.0\"\n  }\n}\n",
     "longname": "/data/data/com.termux/files/home/libplurals/package.json",
     "name": "package.json",
     "static": true,
