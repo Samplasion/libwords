@@ -32,7 +32,7 @@
         <ul></ul>
     </div>
     
-    <div class="lnb-api hidden"><h3>Classes</h3><ul><li><a href="CheckUtils.html">CheckUtils</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="CheckUtils_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="CheckUtils.html#.isSingular">isSingular</a></li></ul></div></li><li><a href="Noun.html">Noun</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="Noun_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="Noun.html#toSingular">toSingular</a></li><li><a href="Noun.html#toString">toString</a></li></ul></div></li><li><a href="Util.html">Util</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="Util_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="Util.html#toString">toString</a></li></ul></div></li></ul></div><div class="lnb-api hidden"><h3>Global</h3><ul><li><a href="global.html#plural">plural</a></li><li><a href="global.html#wordPlural">wordPlural</a></li><li><a href="global.html#wordSingular">wordSingular</a></li></ul></div>
+    <div class="lnb-api hidden"><h3>Classes</h3><ul><li><a href="CheckUtils.html">CheckUtils</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="CheckUtils_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="CheckUtils.html#.isSingular">isSingular</a></li></ul></div></li><li><a href="Noun.html">Noun</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="Noun_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="Noun.html#options">options</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="Noun.html#getPlural">getPlural</a></li><li><a href="Noun.html#getSingular">getSingular</a></li><li><a href="Noun.html#toObject">toObject</a></li><li><a href="Noun.html#toString">toString</a></li></ul></div></li><li><a href="Util.html">Util</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="Util_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="Util.html#toObject">toObject</a></li><li><a href="Util.html#toString">toString</a></li></ul></div></li></ul></div><div class="lnb-api hidden"><h3>Global</h3><ul><li><a href="global.html#plural">plural</a></li><li><a href="global.html#wordPlural">wordPlural</a></li><li><a href="global.html#wordSingular">wordSingular</a></li></ul></div>
 </nav>
 <div id="resizer"></div>
 
@@ -73,6 +73,13 @@
 </dt>
 <dd>
 
+    
+    <div class="description">
+        Creates a noun. Options:
+<ul>
+<li><code>shouldEndInIe</code> - Whether, if the plural ends in 'ies', the singular should end in 'y' oi 'ie'</li>
+</ul>
+    </div>
     
 
     
@@ -118,7 +125,7 @@
 
             
 
-            <td class="description last">The noun</td>
+            <td class="description last">The noun.</td>
         </tr>
 
     
@@ -136,7 +143,7 @@
 
             
 
-            <td class="description last">The options (if any).</td>
+            <td class="description last">The options.</td>
         </tr>
 
     
@@ -227,6 +234,74 @@
     
 
     
+        <h3 class="subsection-title">Members</h3>
+
+        <dl>
+            
+
+<dt>
+<h4 class="name" id="options">
+    <span class="type-signature"></span>options<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        For the toObject() method
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        </dl>
+    
 
     
         <h3 class="subsection-title">Methods</h3>
@@ -236,9 +311,114 @@
 
 <dt>
     
-        <h4 class="name" id="toSingular">
+        <h4 class="name" id="getPlural">
             
-                <span class="type-signature"></span>toSingular<span class="signature">()</span><span class="type-signature"> &rarr; {string}</span>
+                <span class="type-signature"></span>getPlural<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Noun.html">Noun</a>}</span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Returns the plural if <code>noun</code> is plural, or itself otherwise
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type"><a href="Noun.html">Noun</a></span>
+
+
+
+
+
+- The noun in plural
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="getSingular">
+            
+                <span class="type-signature"></span>getSingular<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Noun.html">Noun</a>}</span>
                 
             
         </h4>
@@ -280,7 +460,7 @@
 
 
 
-<span class="param-type">string</span>
+<span class="param-type"><a href="Noun.html">Noun</a></span>
 
 
 
@@ -341,6 +521,114 @@
 
 <dt>
     
+        <h4 class="name" id="toObject">
+            
+                <span class="type-signature"></span>toObject<span class="signature">()</span><span class="type-signature"> &rarr; {object}</span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Returns an object representation of the class.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">object</span>
+
+
+
+
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Util.html#toObject">Util#toObject</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
         <h4 class="name" id="toString">
             
                 <span class="type-signature"></span>toString<span class="signature">()</span><span class="type-signature"></span>
@@ -355,7 +643,8 @@
 
     
     <div class="description">
-        Required toString() method
+        Requi
+red toString() method
     </div>
     
 

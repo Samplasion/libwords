@@ -4,13 +4,14 @@
   "description": "A simple library for word utilities",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js",
+    "test": "jsdoc src/*.js src/README.md -r -c docconf.json",
     "docgen": "docco src/*.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Samplasion/libwords.git"
   },
+  "homepage": "https://samplasion.github.io/libwords",
   "keywords": [
     "plural",
     "plurals",

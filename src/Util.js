@@ -10,25 +10,28 @@ class Util {
      * @param options object The options to be accounted.
      * @param goodKeys ?Array The array of good keys.
      */
-    constructor(item, options, goodKeys = null) {
+    constructor(item) {
         this._item = item;
-        
-        /** Set the options as built-in */
-        for (var opt in options) {
-            if (goodKeys) {
-                if (goodKeys.includes(opt)) this[opt] = options[opt];
-            } else {
-                this[opt] = options[opt];
-            }
-        }
     }
     
     /**
-     * Required toString() method
+     * Requi
+     * red toString() method
      * @return string The item defined in the constructor.
      */
     toString() {
         return this._item;
+    }
+
+    /**
+     * Returns an object representation of the class.
+     * @return {object}
+     */
+    toObject() {
+	var ret = {}
+	ret.item = this._item
+	if (this.opts) ret.opts = this.options;
+	return ret
     }
 }
 
